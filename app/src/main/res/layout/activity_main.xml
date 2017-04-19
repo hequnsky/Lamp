@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#e1dada"/>
+
+    <com.lzy.widget.AlphaIndicator
+        android:background="#e1dada"
+        android:id="@+id/alphaIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal">
+
+        <com.lzy.widget.AlphaView
+            android:background="@drawable/ripple"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            app:av_tabIconNormal="@mipmap/tab_color_normal"
+            app:av_tabIconSelected="@mipmap/tab_color_highlight"
+            app:av_tabText="色彩"
+            app:av_tabTextSize="14sp"
+            app:av_textColorNormal="#999999"
+            app:av_textColorSelected="#2aa7ea"/>
+
+        <com.lzy.widget.AlphaView
+            android:background="@drawable/ripple"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            app:av_tabIconNormal="@mipmap/tab_interaction_normal"
+            app:av_tabIconSelected="@mipmap/tab_interaction_highlight"
+            app:av_tabText="互动"
+            app:av_tabTextSize="14sp"
+            app:av_textColorNormal="#999999"
+            app:av_textColorSelected="#2aa7ea"/>
+
+        <com.lzy.widget.AlphaView
+            android:background="@drawable/ripple"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            app:av_tabIconNormal="@mipmap/tab_scene_normal"
+            app:av_tabIconSelected="@mipmap/tab_scene_highlight"
+            app:av_tabText="情景"
+            app:av_tabTextSize="14sp"
+            app:av_textColorNormal="#999999"
+            app:av_textColorSelected="#2aa7ea"/>
+
+        <com.lzy.widget.AlphaView
+            android:background="@drawable/ripple"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            app:av_tabIconNormal="@mipmap/tab_settings_normal"
+            app:av_tabIconSelected="@mipmap/tab_settings_highlight"
+            app:av_tabText="设置"
+            app:av_tabTextSize="14sp"
+            app:av_textColorNormal="#999999"
+            app:av_textColorSelected="#2aa7ea"/>
+    </com.lzy.widget.AlphaIndicator>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+
+    <color name="silver">#FF0000</color>
+    <color name="orange">#FF8000</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="green">#00FF00</color>
+    <color name="lime">#00FFFF</color>
+    <color name="blue">#0000FF</color>
+    <color name="purple">#8000FF</color>
+    <color name="pink">#FF85B0</color>
+
+    <color name="progresbae_color">#FF4B01</color>
+    <color name="progresbae_text_color">#FF4B01</color>
+
+
+
+</resources>

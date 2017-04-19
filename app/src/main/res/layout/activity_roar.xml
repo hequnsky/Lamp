@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_roar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/roar_bg"
+    tools:context="com.rmc.lamp.mvp.control.ui.RoarActivity">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <android.support.v7.widget.RecyclerView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/roar_recycleview">
+   </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>
+
+    <ImageView
+        android:id="@+id/roar_bt_bg"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp_14"
+        android:background="@mipmap/roar_but_bg"/>
+
+    <TextView
+        android:id="@+id/text_roar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/roar_bt_bg"
+        android:layout_marginBottom="14dp"
+        android:gravity="center_horizontal"
+        android:text="开始"
+        android:textColor="#03c1f5"
+        android:textSize="14sp"/>
+
+    <FrameLayout
+        android:layout_width="135dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="105dp">
+
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_14"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@mipmap/roar_meas_bg"/>
+        <ImageView
+            android:layout_marginTop="@dimen/dp_14"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/roar_meas_front"/>
+        <TextView
+            android:textColor="#a5aeae"
+            android:text="0"
+            android:id="@+id/roar_db"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_gravity="bottom"/>
+    </FrameLayout>
+</RelativeLayout>

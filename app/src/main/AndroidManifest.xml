@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rmc.lamp.mvp.main.ui">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <!-- 开启闪光灯权限 -->
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.rmc.lamp.mvp.control.ui.TranslationActivity" />
+        <activity android:name="com.rmc.lamp.mvp.control.ui.HeartActivity" />
+        <activity android:name="com.rmc.lamp.mvp.control.ui.TongYanActivity" />
+        <activity android:name="com.rmc.lamp.mvp.control.ui.PermissionsActivity" />
+        <activity android:name="com.rmc.lamp.mvp.control.ui.RoarActivity" />
+        <activity android:name="com.rmc.lamp.mvp.control.ui.DengActivity" />
+        <activity android:name="com.rmc.lamp.mvp.control.ui.LoveActivity" />
+        <activity android:name="com.rmc.lamp.mvp.control.ui.ToolsActivity" />
+        <activity android:name="com.rmc.lamp.mvp.control.ui.Main2Activity" />
+
+        <service
+            android:name="com.rmc.lamp.service.TcpService"
+            android:enabled="true"
+            android:exported="true"></service>
+    </application>
+
+</manifest>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_heart"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rmc.lamp.mvp.control.ui.HeartActivity">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:tools="http://schemas.android.com/tools"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical" >
+
+        <SurfaceView
+            android:id="@+id/id_preview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp" />
+
+        <LinearLayout
+            android:id="@+id/id_linearLayout_graph"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/id_tv_heart_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="显示" >
+        </TextView>
+
+
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginBottom="25dp"-->
+        <!--android:background="@mipmap/heart_break_but_fg">-->
+
+        <!--<TextView-->
+
+            <!--android:id="@+id/heart_start"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:gravity="center"-->
+            <!--android:text="开始"-->
+            <!--android:textColor="#d9d5d6"-->
+            <!--android:textSize="20sp"/>-->
+    <!--</LinearLayout>-->
+
+</RelativeLayout>
